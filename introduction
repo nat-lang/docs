@@ -1,19 +1,10 @@
 import ../prelude
 
 render tex"
-  \begin{exe} \ex
-    \[
-      \begin{forest}
-        [{$(n \to e) \to t$ \\ $\lambda g. g[1] \in Left$} [{$(n \to e) \to e$ \\ $\lambda g. g[1]$}] [{$(n \to e) \to e \to t$ \\ $\lambda g\lambda x. x \in Left$ \\ left}]]
-      \end{forest}
-    \]
-  \end{exe}
-  
-  \begin{exe} \ex
-    \[
-      \begin{forest}
-        [{$(n \to e) \to t$ \\ $\lambda g\forall x \in D_{e}. x \in Left$} [{$(n \to e) \to (e \to t) \to t$ \\ $\lambda g\lambda p\forall x \in D_{e}. p(x)$ \\ everyone}] [{$(n \to e) \to e \to t$ \\ $\lambda g\lambda x. x \in Left$} [{$n$ \\ 1}] [{$(n \to e) \to t$ \\ $\lambda g. g[1] \in Left$} [{$(n \to e) \to e$ \\ $\lambda g. g[1]$}] [{$(n \to e) \to e \to t$ \\ $\lambda g\lambda x. x \in Left$ \\ left}]]]] 
-      \end{forest}
-    \]
-  \end{exe}
+\section{Introduction}
+
+natlang.online is an environment for building, testing, and sharing semantic grammars
+for natural language fragments. It's powered by a formal language called Nat, with which it's
+possible to express many ideas from the linguistic and philosophical literature on semantics.
+
 ";
