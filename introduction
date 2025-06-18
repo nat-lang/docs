@@ -26,11 +26,11 @@ For an introduction to formal semantics framed with \textbf{nat}, see \dots
   \item[7.] Domains
   \item[8.] LaTeX
 \end{itemize}
-
 Tutorials:
+
 \begin{itemize}
-  \item[1.] Modeling composition
-  \item[2.] Modeling extensional semantics
+  \item[1.] Building a grammar
+  \item[2.] Building an extensional model
 \end{itemize}
 
 ";
