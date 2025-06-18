@@ -13,4 +13,24 @@ If you have a background in another area of generative linguistics, or in comput
 
 \hfill \break
 For an introduction to formal semantics framed with \textbf{nat}, see \dots
+
+\begin{itemize}
+  \item[1.] Basic syntax
+  \item[2.] Trees, sets, maps, and sequences
+  \item[3.] Comprehensions
+  \item[2.] Infixes and prefixes
+  \item[3.] Pattern matching
+  \item[4.] Classes and objects
+  \item[5.] Quantification
+  \item[6.] The type system
+  \item[7.] Domains
+  \item[8.] LaTeX
+\end{itemize}
+
+Tutorials:
+\begin{itemize}
+  \item[1.] Modeling composition
+  \item[2.] Modeling extensional semantics
+\end{itemize}
+
 ";
