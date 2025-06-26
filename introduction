@@ -15,16 +15,16 @@ If you have a background in another area of generative linguistics, or in comput
 For an introduction to formal semantics framed with \textbf{nat}, see \dots
 
 \begin{itemize}
-  \item[1.] Basic syntax
-  \item[2.] Trees, sets, maps, and sequences
-  \item[3.] Comprehensions
-  \item[2.] Infixes and prefixes
-  \item[3.] Pattern matching
-  \item[4.] Classes and objects
-  \item[5.] Quantification
-  \item[6.] The type system
-  \item[7.] Domains
-  \item[8.] LaTeX
+  \item[1.] Basic syntax and semantics
+  \item[2.] Literals: numbers, strings, truth values, and symbols
+  \item[3.] Infixes and prefixes
+  \item[4.] Pattern matching
+  \item[5.] Objects: trees, sets, maps, and sequences
+  \item[6.] Classes and objects
+  \item[7.] Quantification
+  \item[8.] The type system
+  \item[9.] Domains
+  \item[10.] LaTeX
 \end{itemize}
 Tutorials:
 
