@@ -8,11 +8,12 @@ natlang.onlineeee is an environment for building, evaluating, and sharing semant
 It's powered by the formal language \textbf{nat}, with which it's possible to express ideas from the linguistic and philosophical literature on semantics.
 
 \hfill \break
-If you're familiar with formal semantics, you can \href{https://natlang.online/docs/getting-started}{jump right in}.
-If you have a background in another area of generative linguistics, or in computer science, logic, or math, you should also be able to follow along.
+If you're familiar with formal semantics, you should be able to jump right in: pick a paper
+in the library that you're familiar with and experiment with it. The formalism should match
+that of the paper closely enough to recognize.
 
 \hfill \break
-For an introduction to formal semantics framed with \textbf{nat}, see \dots
+To learn more about \textbf{nat}, continue reading.
 
 \begin{itemize}
   \item[1.] Basic syntax and semantics
@@ -29,8 +30,10 @@ For an introduction to formal semantics framed with \textbf{nat}, see \dots
 Tutorials:
 
 \begin{itemize}
-  \item[1.] Building a grammar
-  \item[2.] Building an extensional model
+  \item[1.] Model theory
+  \item[2.] Composition
+  \item[3.] Modality
+  \item[4.] Dynamics
 \end{itemize}
 
 ";
