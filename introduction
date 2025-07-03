@@ -10,7 +10,7 @@ It's powered by the formal language \textbf{nat}, with which it's possible to ex
 \hfill \break
 If you're familiar with formal semantics, you should be able to jump right in: pick a paper
 in the library that you're familiar with and experiment with it. The formalism should match
-that of the paper closely enough to recognize.
+the paper closely enough to recognize.
 
 \hfill \break
 To learn more about \textbf{nat}, continue reading.
