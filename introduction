@@ -4,7 +4,7 @@ render tex"
 
 \section{Introduction}
 
-natlang.onlineeee is an environment for building, evaluating, and sharing semantic grammars.
+natlang.online is an environment for building, evaluating, and sharing semantic grammars.
 It's powered by the formal language \textbf{nat}, with which it's possible to express ideas from the linguistic and philosophical literature on semantics.
 
 \hfill \break
