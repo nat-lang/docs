@@ -24,8 +24,7 @@ To learn more about \textbf{nat}, continue reading.
   \item[5.] Control: loops, conditionals, and quantifiers
   \item[6.] Objects: trees, sets, maps, and sequences
   \item[7.] Classes
-  \item[8.] The type system
-  \item[9.] Domains
+  \item[8.] Types and domains
   \item[10.] LaTeX
 \end{itemize}
 Tutorials:
