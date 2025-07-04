@@ -19,7 +19,7 @@ To learn more about \textbf{nat}, continue reading.
 \begin{itemize}
   \item[1.] Basic syntax and semantics
   \item[2.] Literals: numbers, strings, truth values, and symbols
-  \item[3.[ Functions
+  \item[3.] Functions
   \item[4.] Pattern matching
   \item[5.] Control: loops, conditionals, and quantifiers
   \item[6.] Objects: trees, sets, maps, and sequences
