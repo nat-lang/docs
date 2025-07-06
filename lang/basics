@@ -1,3 +1,12 @@
 use ../../tex
 
-typeset "";
+let output = [];
+
+let prefix typeset = output.push . StandaloneTexDocument;
+let prefix codeblock = output.push . Codeblock;
+
+typeset tex"
+\textbf{basics}
+";
+
+let main = () => Generator(output, serialize);
