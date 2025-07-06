@@ -1,6 +1,6 @@
 use ../tex
 
-render tex"
+typeset tex"
 
 \section{Introduction}
 
