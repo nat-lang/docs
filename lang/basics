@@ -5,7 +5,6 @@ class GuideDoc extends TexDocument {
     super.init();
     this.preamble = tex"
       \documentclass[varwidth=\maxdimen]{standalone}
-      \usepackage[a5paper,margin=1in]{geometry}
       \usepackage{stmaryrd}
       \usepackage{amsmath}
       \usepackage{tikz}
@@ -29,7 +28,11 @@ let prefix codeblock = output.push . Codeblock;
 let main = () => Generator(output, serialize);
 
 typeset tex"
-\textbf{basics}
+\textbf{basics} \hfill \\
+Nat is a simple language. It consists of functions and the objects
+that functions act on. A few kinds of object are defined by the compiler
+and always available: numbers, truth values, and strings. The compiler
+also defines basic functions for manipulating these objects.
 ";
 
 codeblock "print 1 + 1;";
