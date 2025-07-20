@@ -4,7 +4,7 @@ class GuideDoc extends TexDocument {
   init(content) => {
     super.init();
     this.preamble = tex"
-      \documentclass{standalone}
+      \documentclass[varwidth=\maxdimen]{standalone}
       \usepackage[a5paper,margin=1in]{geometry}
       \usepackage{stmaryrd}
       \usepackage{amsmath}
@@ -23,7 +23,7 @@ class GuideDoc extends TexDocument {
 
 let output = [];
 
-let prefix typeset = output.push . Guidedoc;
+let prefix typeset = output.push . GuideDoc;
 let prefix codeblock = output.push . Codeblock;
 
 let main = () => Generator(output, serialize);
@@ -32,3 +32,4 @@ typeset tex"
 \textbf{basics}
 ";
 
+codeblock "print 1 + 1;";
