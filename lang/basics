@@ -31,17 +31,23 @@ let prefix codeblock = output.push . Codeblock;
 let main = () => Generator(output, serialize);
 
 typeset tex"
-\textbf{Basics}
-\hfill \\
-\hfill \\
-Nat is a simple language, consisting of functions and the objects
-that functions act on. Some primitive objects are defined by the compiler
-and always available: numbers, truth values, and strings. Alongside these
-objects are basic functions for doing math, boolean logic, and string manipulation.
-\hfill \\
-\hfill \\
-You can, for instance, do basic arithmetic.
-\hfill \\
+  \textbf{Basics}
+  \hfill \\
+  \hfill \\
+  Nat is a simple language, consisting of functions and the objects
+  that functions act on. Some primitive objects are defined by the compiler
+  and always available: numbers, truth values, and strings. Alongside these
+  objects are basic functions for doing math, boolean logic, and string manipulation.
+  \hfill \\
+  \hfill \\
+  You can, for instance, do basic arithmetic.
+  \hfill \\
 ";
 
 codeblock "print 1 + 1;";
+
+typeset tex"
+  You can also do basic boolean logic.
+";
+
+codeblock "print true and false;";
