@@ -46,7 +46,6 @@ typeset tex"
 codeblock "print 1 + 1;";
 
 typeset tex"
-  \hfill \\
   You can also do basic boolean logic.
 ";
 
