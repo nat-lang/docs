@@ -6,7 +6,7 @@ class GuideDoc extends TexDocument {
     this.preamble = tex"
       \documentclass[
         border={0pt 10px 10px 10px},
-        varwidth=600px
+        varwidth=400px
       ]{standalone}
       \usepackage{stmaryrd}
       \usepackage{amsmath}
