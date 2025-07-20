@@ -26,8 +26,9 @@ let output = [];
 let prefix typeset = output.push . Guidedoc;
 let prefix codeblock = output.push . Codeblock;
 
+let main = () => Generator(output, serialize);
+
 typeset tex"
 \textbf{basics}
 ";
 
-let main = () => Generator(output, serialize);
