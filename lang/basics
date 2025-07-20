@@ -41,12 +41,12 @@ typeset tex"
   \hfill \\
   \hfill \\
   You can, for instance, do basic arithmetic.
-  \hfill \\
 ";
 
 codeblock "print 1 + 1;";
 
 typeset tex"
+  \hfill \\
   You can also do basic boolean logic.
 ";
 
