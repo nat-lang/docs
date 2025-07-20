@@ -49,7 +49,4 @@ typeset tex"
   You can also do basic boolean logic.
 ";
 
-codeblock "
-let x = true and false;
-print true and false;
-";
+codeblock "print true and false;";
