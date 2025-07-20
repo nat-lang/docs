@@ -1,8 +1,29 @@
 use ../../tex
 
+class GuideDoc extends TexDocument {
+  init(content) => {
+    super.init();
+    this.preamble = tex"
+      \documentclass{standalone}
+      \usepackage[a5paper,margin=1in]{geometry}
+      \usepackage{stmaryrd}
+      \usepackage{amsmath}
+      \usepackage{tikz}
+      \usepackage[linguistics]{forest}
+      \usepackage{MnSymbol}
+      \usepackage{gb4e}
+
+      \usepackage[colorlinks]{hyperref}
+      \usepackage{cleveref}
+    ";
+
+    this.add(content);
+  }
+}
+
 let output = [];
 
-let prefix typeset = output.push . StandaloneTexDocument;
+let prefix typeset = output.push . Guidedoc;
 let prefix codeblock = output.push . Codeblock;
 
 typeset tex"
