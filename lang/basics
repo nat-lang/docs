@@ -4,7 +4,10 @@ class GuideDoc extends TexDocument {
   init(content) => {
     super.init();
     this.preamble = tex"
-      \documentclass[varwidth=\maxdimen]{standalone}
+      \documentclass[
+        border={0pt 0pt 0pt 1cm},
+        varwidth=400px
+      ]{standalone}
       \usepackage{stmaryrd}
       \usepackage{amsmath}
       \usepackage{tikz}
@@ -28,11 +31,13 @@ let prefix codeblock = output.push . Codeblock;
 let main = () => Generator(output, serialize);
 
 typeset tex"
+\vspace{10px}
 \textbf{basics} \hfill \\
 Nat is a simple language. It consists of functions and the objects
 that functions act on. A few kinds of object are defined by the compiler
 and always available: numbers, truth values, and strings. The compiler
 also defines basic functions for manipulating these objects.
+\vspace{10px}
 ";
 
 codeblock "print 1 + 1;";
