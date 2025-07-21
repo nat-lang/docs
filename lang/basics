@@ -51,4 +51,6 @@ codeblock "print true and false;";
 
 typeset "As well as string concatenation, indexing, and substitution.";
 
-codeblock "print #{quote("despair")} + #{quote(" ")} + #{quote("young")};";
+codeblock "print #{quote("despair")} + #{quote(" ")} + #{quote("young")};
+print #{quote("aged")}[2];
+print #{quote("aged")}[2] = #{quote("i")};";
