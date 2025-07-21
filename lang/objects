@@ -4,3 +4,14 @@ let prefix typeset = output.push . GuideTexDoc;
 let prefix codeblock = output.push . Codeblock;
 let main = () => Generator(output, serialize);
 
+typeset tex"
+\textbf{Objects}
+\hfill \\
+\hfill \\
+\textbf{nat} defines a number of objects that are used to collect
+other objects: sets, sequences, maps, and trees.
+\hfill \\
+\hfill \\
+To make a set, use curly braces.
+";
+
