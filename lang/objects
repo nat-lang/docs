@@ -32,4 +32,5 @@ print x == y;
 typeset tex"It's also possible to make a set by specifying
 conditions that its elements satisfy.";
 
-codeblock "let x = {a | a in {1, 2, 3}, a not in { ";
+codeblock "let x = {a | a in {true,false}, a};
+print x.elements().values;";
