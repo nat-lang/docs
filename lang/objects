@@ -12,13 +12,17 @@ typeset tex"
 other objects: sets, sequences, maps, and trees.
 \hfill \\
 \hfill \\
+1. Sets
+\hfill \\
+\hfill \\
 To make a set, use curly braces.
 ";
 
 codeblock "let x = {1, 2, 3};";
 
 typeset tex"The set object comes with some familiar functions,
-which you can access with the $object.function$ syntax.";
+which you can access with the $object.function$ syntax. Some functions
+have terser symbolic aliases that can be used as infixes.";
 
 codeblock "let x = {1, 2, 3}.union({3, 4, 5});
 print x.elements().values;
@@ -30,7 +34,18 @@ print x == y;
 ";
 
 typeset tex"It's also possible to make a set by specifying
-conditions that its elements satisfy.";
+conditions that its elements satisfy. We call this a \textit{set comprehension}.";
 
 codeblock "let x = {a | a in {true,false}, a};
 print x.elements().values;";
+
+typeset tex"When using the comprehension syntax, we always introduce a bound
+variable and a source object with a \textit{variable in object} phrase.
+These are the \textit{generators} for the comprehensions. Once a variable has been
+introduced, it's in the scope of any predicates or generators to its right.";
+
+typeset tex"
+2. Sequences
+\hfill \\
+\hfill \\
+";
