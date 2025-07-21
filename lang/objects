@@ -77,3 +77,25 @@ A sequence is a totally ordered multiset. To make a sequence, use square bracket
 codeblock "let x = [1, 2, 3];
 print x.values;";
 
+typeset tex"Because sequences have order, they can be accessed by index. Indices begin at $0$.";
+
+codeblock "print [1, 2, 3][0];";
+
+typeset tex"
+3. Maps
+\hfill \\
+\hfill \\
+";
+
+typeset tex"
+4. Trees
+\hfill \\
+\hfill \\
+";
+
+typeset tex"
+\textbf{Classes}
+\hfill \\
+\hfill \\
+It's possible to define your own classes of object.
+";
