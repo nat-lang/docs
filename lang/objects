@@ -59,9 +59,9 @@ typeset tex"Arbitrary expressions can make up the body of set comprehensions, in
 other set comprehensions, with the caveat that they must be hashable. We will gloss over
 this detail for the moment.";
 
-codeblock "let x = {1, 2, 3};
-print x(1);
-print x(4);";
+codeblock "let x = {(x => x + 1)(x) | x in {1,2,3}};
+print x.elements().values";
+
 typeset tex"
 2. Sequences
 \hfill \\
