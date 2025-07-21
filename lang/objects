@@ -16,3 +16,9 @@ To make a set, use curly braces.
 ";
 
 codeblock "let x = {1, 2, 3};";
+
+typeset tex"The set object comes with familiar functions for
+working with sets.";
+
+codeblock "let x = {1, 2, 3} & {3, 4, 5};
+print x.elements().values;";
