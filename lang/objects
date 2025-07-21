@@ -42,7 +42,19 @@ print x.elements().values;";
 typeset tex"When using the comprehension syntax, we always introduce a bound
 variable and a source object with a \textit{variable in object} phrase.
 These are the \textit{generators} for the comprehensions. Once a variable has been
-introduced, it's in the scope of any predicates or generators to its right.";
+introduced, we can restrict it with any number of predicates to its right. We can
+also refer to it within other generators to its right.";
+
+codeblock "let x = {a | a in {{1, 2}, {3,4}}, b in a, b not in {2, 3}};
+print x.elements().values;";
+
+typeset tex"While they're not the same as functions, sets can be applied to arguments,
+so that in certain situations they're indistinguishable from their characteristic functions.";
+
+codeblock "";
+
+typeset tex"Arbitrary expressions can make up the body of set comprehensions, including
+other set comprehensions.";
 
 typeset tex"
 2. Sequences
