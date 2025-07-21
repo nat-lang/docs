@@ -1,31 +1,7 @@
-use ../../tex
-
-class GuideDoc extends TexDocument {
-  init(content) => {
-    super.init();
-    this.preamble = tex"
-      \documentclass[
-        border={0pt 0px 0px 0px},
-        varwidth=400px
-      ]{standalone}
-      \usepackage{stmaryrd}
-      \usepackage{amsmath}
-      \usepackage{tikz}
-      \usepackage[linguistics]{forest}
-      \usepackage{MnSymbol}
-      \usepackage{gb4e}
-
-      \usepackage[colorlinks]{hyperref}
-      \usepackage{cleveref}
-    ";
-
-    this.add(content);
-  }
-}
 
 let output = [];
 
-let prefix typeset = output.push . GuideDoc;
+let prefix typeset = output.push . GuideTexDoc;
 let prefix codeblock = output.push . Codeblock;
 
 let main = () => Generator(output, serialize);
