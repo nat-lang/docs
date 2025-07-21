@@ -45,7 +45,7 @@ typeset tex"
 
 codeblock "print 1 + 1;";
 
-typeset "You can also do basic boolean logic.";
+typeset "You can also do boolean logic.";
 
 codeblock "print true and false;";
 
@@ -61,3 +61,6 @@ codeblock "let x = 1;
 let y = 1;
 
 print x + y;";
+
+typeset tex"In fact, both $+$ and $print$ are variables that point to functions
+defined by the compiler.";
