@@ -21,17 +21,17 @@ typeset tex"
 
 codeblock "print 1 + 1;";
 
-typeset "You can also do boolean logic.";
+typeset tex"You can also do boolean logic.";
 
 codeblock "print true and false;";
 
-typeset "As well as string concatenation, indexing, and substitution.";
+typeset tex"As well as string concatenation, indexing, and substitution.";
 
 codeblock "print #{quote("despair")} + #{quote(" ")} + #{quote("young")};
 print #{quote("aged")}[2];
 print #{quote("aged")}[2] = #{quote("i")};";
 
-typeset "You can store values in variables.";
+typeset tex"You can store values in variables.";
 
 codeblock "let x = 1;
 let y = 1;
@@ -44,13 +44,13 @@ defined by the compiler.";
 codeblock "print +;
 print print;";
 
-typeset "To define your own function, introduce a bound variable, in this
-case `x', and then do something with it after a fat arrow.";
+typeset tex"To define your own function, introduce a bound variable, in this
+case $x$, and then do something with it after a fat arrow.";
 
 codeblock "let +1 = x => x + 1;
 print +1(1);";
 
-typeset "Functions are just another kind of object -- they need not be attached
+typeset tex"Functions are just another kind of object -- they need not be attached
 to a variable, and they can be passed to other functions. They can also have
 multiple arguments.";
 
