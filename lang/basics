@@ -54,3 +54,10 @@ typeset "As well as string concatenation, indexing, and substitution.";
 codeblock "print #{quote("despair")} + #{quote(" ")} + #{quote("young")};
 print #{quote("aged")}[2];
 print #{quote("aged")}[2] = #{quote("i")};";
+
+typeset "You can store values in variables.";
+
+codeblock "let x = 1;
+let y = 1;
+
+print x + y;";
