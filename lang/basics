@@ -67,3 +67,8 @@ defined by the compiler.";
 
 codeblock "print +;
 print print;";
+
+typeset "Here's how to define your own functions.";
+
+codeblock "let +1 = x => x + 1;
+print +1(1);";
