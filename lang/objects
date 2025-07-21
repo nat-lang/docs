@@ -20,5 +20,10 @@ codeblock "let x = {1, 2, 3};";
 typeset tex"The set object comes with familiar functions for
 working with sets.";
 
+codeblock "let x = {1, 2, 3}.union({3, 4, 5});
+print x.elements().values;";
+
+typeset tex"Or equivalently:";
+
 codeblock "let x = {1, 2, 3} & {3, 4, 5};
 print x.elements().values;";
