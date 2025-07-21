@@ -33,6 +33,12 @@ let y = {1, 2, 3} & {3, 4, 5};
 print x == y;
 ";
 
+codeblock "let x = {1, 2, 3}.powerset();
+x.map(y => {
+  print y.elements.values();
+});
+";
+
 typeset tex"It's also possible to make a set by specifying
 conditions that its elements satisfy. We call this a \textit{set comprehension}.";
 
