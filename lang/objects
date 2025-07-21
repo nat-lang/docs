@@ -55,9 +55,9 @@ codeblock "let x = {1, 2, 3};
 print x(1);
 print x(4);";
 
-typeset tex"Arbitrary expressions can make up the body of set comprehensions, including
-other set comprehensions, with the caveat that they must be hashable. We will gloss over
-this detail for the moment.";
+typeset tex"Arbitrary expressions can occur in the body of set comprehensions, including
+other set comprehensions. (There is a caveat -- such expressions must be hashable. We will
+gloss over this detail for the moment.)";
 
 codeblock "let x = {(x => x + 1)(x) | x in {1,2,3}};
 print x.elements().values;";
@@ -66,4 +66,8 @@ typeset tex"
 2. Sequences
 \hfill \\
 \hfill \\
-";
+A sequence is a totally ordered multiset. To make a sequence, use square brackets.";
+
+codeblock "let x = [1, 2, 3];
+print x.values;";
+
