@@ -64,3 +64,6 @@ print x + y;";
 
 typeset tex"In fact, both $+$ and $print$ are variables that point to functions
 defined by the compiler.";
+
+codeblock "print +;
+print print;";
