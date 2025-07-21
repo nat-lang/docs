@@ -45,8 +45,10 @@ typeset tex"
 
 codeblock "print 1 + 1;";
 
-typeset tex"
-  You can also do basic boolean logic.
-";
+typeset "You can also do basic boolean logic.";
 
 codeblock "print true and false;";
+
+typeset "As well as string concatenation, indexing, and substitution.";
+
+codeblock "print #{quote("despair")} + #{quote(" ")} + #{quote("young")};";
