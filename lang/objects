@@ -60,7 +60,7 @@ other set comprehensions, with the caveat that they must be hashable. We will gl
 this detail for the moment.";
 
 codeblock "let x = {(x => x + 1)(x) | x in {1,2,3}};
-print x.elements().values";
+print x.elements().values;";
 
 typeset tex"
 2. Sequences
