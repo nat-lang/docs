@@ -45,17 +45,23 @@ These are the \textit{generators} for the comprehensions. Once a variable has be
 introduced, we can restrict it with any number of predicates to its right. We can
 also refer to it within other generators to its right.";
 
-codeblock "let x = {a | a in {{1, 2}, {3,4}}, b in a, b not in {2, 3}};
+codeblock "let x = {b | a in {{1, 2}, {3, 4}}, b in a, b not in {2, 3}};
 print x.elements().values;";
 
 typeset tex"While they're not the same as functions, sets can be applied to arguments,
 so that in certain situations they're indistinguishable from their characteristic functions.";
 
-codeblock "";
+codeblock "let x = {1, 2, 3};
+print x(1);
+print x(4);";
 
 typeset tex"Arbitrary expressions can make up the body of set comprehensions, including
-other set comprehensions.";
+other set comprehensions, with the caveat that they must be hashable. We will gloss over
+this detail for the moment.";
 
+codeblock "let x = {1, 2, 3};
+print x(1);
+print x(4);";
 typeset tex"
 2. Sequences
 \hfill \\
