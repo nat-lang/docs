@@ -8,10 +8,11 @@ typeset tex"
 \textbf{Objects}
 \hfill \\
 \hfill \\
-\textbf{nat} defines a number of objects that are used to collect
+\textbf{nat} defines a number of objects for structuring
 other objects: sets, sequences, maps, and trees.
 \hfill \\
 \hfill \\
 To make a set, use curly braces.
 ";
 
+codeblock "let x = {1, 2, 3};";
