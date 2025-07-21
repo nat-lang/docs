@@ -35,8 +35,8 @@ typeset tex"
   \hfill \\
   \hfill \\
   Nat is a simple language, consisting of functions and the objects
-  that functions act on. Some primitive objects are defined by the compiler
-  and always available: numbers, truth values, and strings. Alongside these
+  that functions act on. Certain primitive objects are
+  always available: numbers, truth values, and strings. Alongside these
   objects are basic functions for doing math, boolean logic, and string manipulation.
   \hfill \\
   \hfill \\
