@@ -66,15 +66,13 @@ print f(1);
 print f(2);
 print f(3);";
 
-typeset tex"Functions need not be bound to a variable.";
+typeset tex"Functions can be anonymous, and they can be the arguments of other functions.
+Here we pass two anonymous functions to the built in composition function.";
 
-codeblock "let +1 = x => x + 1;
-let -1 = x => x - 1;
+codeblock "let f = (x => x + 1) . (x => x - 1);
 
-let id = +1 . -1;
-
-print id(1);
-print id(2);";
+print f(1);
+print f(2);";
 
 typeset tex"
   \textbf{2. Values}
