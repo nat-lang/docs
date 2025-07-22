@@ -25,13 +25,13 @@ parentheses and separating them with commas produces an $n$-ary function.";
 
 codeblock "let f = (x, y, z) => x + y - z;
 
-print f(1, 1, 2);";
+print f(1, 2, 3);";
 
 typeset tex"Omitting the parentheses and commas produces a curried function.";
 
 codeblock "let f = x y z => x + y - z;
 
-print f(1)(1)(2);";
+print f(1)(2)(3);";
 
 typeset tex"Affixing a parameter with a $*$ produces a variadic function.";
 
@@ -52,6 +52,15 @@ print f(2);";
 typeset tex"Match multiple values by separating parameter image pairs with a $|$.";
 
 codeblock "let f = 1 => 2 | 2 => 3;
+
+print f(1);
+print f(2);
+print f(3);";
+
+typeset tex"You can match specific values for total functions as well by supplying
+a catchall parameter, which is just a normal bound variable.";
+
+codeblock "let f = 1 => 2 | x => 3;
 
 print f(1);
 print f(2);
