@@ -19,8 +19,8 @@ To learn more about \textbf{nat}, continue reading.
 \begin{itemize}
   \item[1.] Functions and values
   \item[2.] Objects
-  \item[3.] Control: loops, conditionals, and quantifiers
-  \item[4.] Types and domains
+  \item[3.] Control
+  \item[4.] Types
   \item[5.] LaTeX
 \end{itemize}
 Tutorials:
