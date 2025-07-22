@@ -25,7 +25,7 @@ which you can access with the $object.function$ syntax. Some functions
 have terser symbolic aliases that can be used as infixes.";
 
 codeblock "let x = {1, 2, 3}.union({3, 4, 5});
-print x.elements().values;
+print x;
 
 // Or equivalently:
 
@@ -33,17 +33,13 @@ let y = {1, 2, 3} & {3, 4, 5};
 print x == y;
 ";
 
-codeblock "let x = {1, 2, 3}.powerset();
-x.map(y => {
-  print y.elements.values();
-});
+codeblock "print {1, 2, 3}.powerset();
 ";
 
 typeset tex"It's also possible to make a set by specifying
 conditions that its elements satisfy. We call this a \textit{set comprehension}.";
 
-codeblock "let x = {a | a in {true,false}, a};
-print x.elements().values;";
+codeblock "print {a | a in {true,false}, a};";
 
 typeset tex"When using the comprehension syntax, we always introduce a bound
 variable and a source object with a \textit{variable in object} phrase.
@@ -51,8 +47,7 @@ These are the \textit{generators} for the comprehensions. Once a variable has be
 introduced, we can restrict it with any number of predicates to its right. We can
 also refer to it within other generators to its right.";
 
-codeblock "let x = {b | a in {{1, 2}, {3, 4}}, b in a, b not in {2, 3}};
-print x.elements().values;";
+codeblock "print {b | a in {{1, 2}, {3, 4}}, b in a, b not in {2, 3}};";
 
 typeset tex"While they're not the same as functions, sets can be applied to arguments,
 so that in certain situations they're indistinguishable from their characteristic functions.";
@@ -65,8 +60,7 @@ typeset tex"Arbitrary expressions can occur in the body of set comprehensions, i
 other set comprehensions. (There is a caveat -- such expressions must be hashable. We will
 gloss over this detail for the moment.)";
 
-codeblock "let x = {(x => x + 1)(x) | x in {1,2,3}};
-print x.elements().values;";
+codeblock "print {(x => x + 1)(x) | x in {1,2,3}};";
 
 typeset tex"
 2. Sequences
