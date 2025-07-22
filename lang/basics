@@ -47,6 +47,13 @@ parameter. The function will be \textit{undefined} at any other value.";
 codeblock "let f = 1 => 2;
 
 print f(1);
+print f(2);";
+
+typeset tex"Match multiple values by separating parameter image pairs with a $|$.";
+
+codeblock "let f = 1 => 2 | 2 => 3;
+
+print f(1);
 print f(2);
 print f(3);";
 
