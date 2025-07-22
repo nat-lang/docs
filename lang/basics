@@ -37,7 +37,17 @@ typeset tex"Affixing a parameter with a $*$ produces a variadic function.";
 
 codeblock "let f = (*x) => x.reduce(+, 0);
 
+print f(1);
+print f(1, 2);
 print f(1, 2, 3);";
+
+typeset tex"Functions can be partial. To define a partial function, use a value for a
+parameter. The function will be \textit{undefined} at any other value.";
+
+codeblock "let f = 1 => 2;
+
+print f(1);
+print f(2);";
 
 typeset tex"
   \textbf{2. Values}
