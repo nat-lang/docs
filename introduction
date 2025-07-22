@@ -1,4 +1,9 @@
-use ../tex
+
+let output = ArticleTexDoc();
+
+let prefix typeset = ArticleTexDoc.add;
+
+let main = () => serialize . output.render;
 
 typeset tex"
 
@@ -33,5 +38,3 @@ Tutorials:
 \end{itemize}
 
 ";
-
-let main = () => document.render();
