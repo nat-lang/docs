@@ -66,6 +66,16 @@ print f(1);
 print f(2);
 print f(3);";
 
+typeset tex"Functions need not be bound to a variable.";
+
+codeblock "let +1 = x => x + 1;
+let -1 = x => x - 1;
+
+let id = +1 . -1;
+
+print id(1);
+print id(2);";
+
 typeset tex"
   \textbf{2. Values}
   \hfill \\
