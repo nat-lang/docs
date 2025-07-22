@@ -7,19 +7,40 @@ let prefix codeblock = output.push . Codeblock;
 let main = () => Generator(output, serialize);
 
 typeset tex"
-  \textbf{Basics}
+  \textbf{1. Functions}
   \hfill \\
   \hfill \\
-  Nat is a simple language, consisting of functions and the objects
+  Nat is a simple language, consisting of functions and the things
   that functions act on. To define a function, introduce a variable and then
-  do something with it after a fat arrow. Apply the function with parentheses
-  around an argument and print the result with the \textit{print} function.
+  do something with the variable after a fat arrow. Apply the function to an
+  argument with parentheses and print the result with the \textit{print} function.
 ";
 
-codeblock "let f = x => x + 1;";
+codeblock "let f = x => x + 1;
+
+print f(1);";
+
+typeset tex"Functions can have any number of parameters. Wrapping $n$ parameters in
+parentheses and separating them with commas produces an $n$-ary function.";
+
+codeblock "let f = (x, y, z) => x + y - z;
+
+print f(1, 1, 2);";
+
+typeset tex"Omitting the parentheses and commas produces a curried function.";
+
+codeblock "let f = x y z => x + y - z;
+
+print f(1)(1)(2);";
+
+typeset tex"Affixing a parameter with a $*$ produces a variadic function.";
+
+codeblock "let f = (*x) => x.reduce(+, 0);
+
+print f(1, 2, 3);";
 
 typeset tex"
-  \textbf{Primitives}
+  \textbf{2. Values}
   \hfill \\
   \hfill \\
   Certain primitive objects are always available: numbers, truth values, strings, and symbols.
