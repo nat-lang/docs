@@ -1,7 +1,7 @@
-
-let output = ArticleTexDoc();
-let prefix typeset = output.add;
-let main = () => serialize(output.render());
+let output = [];
+let prefix typeset = output.push . GuideTexDoc;
+let prefix codeblock = output.push . Codeblock;
+let main = () => Generator(output, serialize);
 
 typeset tex"
 
