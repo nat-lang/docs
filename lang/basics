@@ -47,7 +47,8 @@ parameter. The function will be \textit{undefined} at any other value.";
 codeblock "let f = 1 => 2;
 
 print f(1);
-print f(2);";
+print f(2);
+print f(3);";
 
 typeset tex"
   \textbf{2. Values}
