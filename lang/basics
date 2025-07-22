@@ -12,7 +12,8 @@ typeset tex"
   \hfill \\
   Nat is a simple language, consisting of functions and the objects
   that functions act on. To define a function, introduce a variable and then
-  do something with it after a fat arrow.
+  do something with it after a fat arrow. Apply the function with parentheses
+  around an argument and print the result with the \textit{print} function.
 ";
 
 codeblock "let f = x => x + 1;";
