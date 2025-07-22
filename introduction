@@ -1,9 +1,7 @@
 
 let output = ArticleTexDoc();
-
-let prefix typeset = ArticleTexDoc.add;
-
-let main = () => serialize . output.render;
+let prefix typeset = output.add;
+let main = () => serialize(output.render());
 
 typeset tex"
 
