@@ -19,6 +19,18 @@ typeset tex"
   You can, for instance, do arithmetic.
 ";
 
+typeset tex"
+  \textbf{Primitives}
+  \hfill \\
+  \hfill \\
+  Certain primitive objects are always available: numbers, truth values, strings, and symbols.
+  Alongside these objects are basic functions for doing math, boolean logic, string manipulation,
+  testing for equality, and so on.
+  \hfill \\
+  \hfill \\
+  You can, for instance, do arithmetic.
+";
+
 codeblock "print 1 + 1;";
 
 typeset tex"You can also do boolean logic.";
