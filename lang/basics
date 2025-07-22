@@ -11,21 +11,19 @@ typeset tex"
   \hfill \\
   \hfill \\
   Nat is a simple language, consisting of functions and the objects
-  that functions act on. Certain primitive objects are
-  always available: numbers, truth values, and strings. Alongside these
-  objects are basic functions for doing math, boolean logic, and string manipulation.
-  \hfill \\
-  \hfill \\
-  You can, for instance, do arithmetic.
+  that functions act on. To define a function, introduce a variable and then
+  do something with it after a fat arrow.
 ";
+
+codeblock "let f = x => x + 1;";
 
 typeset tex"
   \textbf{Primitives}
   \hfill \\
   \hfill \\
   Certain primitive objects are always available: numbers, truth values, strings, and symbols.
-  Alongside these objects are basic functions for doing math, boolean logic, string manipulation,
-  testing for equality, and so on.
+  Alongside these objects are basic functions for evaluating equality, and for doing math, boolean
+  logic, and string manipulation.
   \hfill \\
   \hfill \\
   You can, for instance, do arithmetic.
