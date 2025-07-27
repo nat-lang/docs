@@ -15,8 +15,6 @@ If you have a background in formal semantics, you should be able to jump right i
 in the library that you know and experiment with it. The formalism should match the paper closely
 enough to recognize.
 
-\hfill \break
-
 \begin{itemize}
   \item[1.] Functions and values
   \item[2.] Objects
