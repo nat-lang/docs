@@ -63,7 +63,7 @@ print f(3);";
 typeset tex"You can match specific values for total functions as well by supplying
 a catchall parameter, which is just a normal bound variable.";
 
-codeblock "let f = 1 => 2 | x => 3;
+codeblock "let f = 1 => 2 | x => x + 1;
 
 print f(1);
 print f(2);
