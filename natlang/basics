@@ -84,19 +84,4 @@ typeset tex"
   Certain primitive objects are always available: numbers, truth values, strings, and symbols.
   Alongside these objects are basic functions for evaluating equality, and for doing math, boolean
   logic, and string manipulation.
-  \hfill \\
-  \hfill \\
-  You can, for instance, do arithmetic.
 ";
-
-codeblock "print 1 + 1;";
-
-typeset tex"You can also do boolean logic.";
-
-codeblock "print true and false;";
-
-typeset tex"As well as string concatenation, indexing, and substitution.";
-
-codeblock "print #{quote("despair")} + #{quote(" ")} + #{quote("young")};
-print #{quote("aged")}[2];
-print #{quote("aged")}[2] = #{quote("i")};";
