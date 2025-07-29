@@ -15,9 +15,9 @@ typeset tex"
 \hfill \\
 \hfill \\
   Nat is a simple language, consisting of functions and the things
-  that functions act on. To define a function, introduce a variable and then
-do something with the variable after a fat arrow. Apply the function to an
-  argument with parentheses and print the result with the \codefont{print} function.
+  that functions act on.To define a function, introduce a variable and then
+do something with the variable after a fat arrow.Apply the function to an
+  argument with parentheses and print the result with the \codefont{ print } function.
 ";
 
 codeblock "let f = x => x + 1;
