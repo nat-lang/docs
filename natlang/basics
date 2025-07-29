@@ -1,37 +1,41 @@
+use../../ core / online as online
 
 let output = [];
-
-let prefix typeset = output.push . GuideTexDoc;
-let prefix codeblock = output.push . Codeblock;
+let doc = x => {
+  print online.window.center;
+  return GuideTexDoc(x, online.window.center);
+};
+let prefix typeset = output.push.doc;
+let prefix codeblock = output.push.Codeblock;
 
 let main = () => Generator(output, serialize);
 
 typeset tex"
-  \textbf{1. Functions}
-  \hfill \\
-  \hfill \\
+\textbf{ 1. Functions }
+\hfill \\
+\hfill \\
   Nat is a simple language, consisting of functions and the things
-  that functions act on. To define a function, introduce a variable and then
-  do something with the variable after a fat arrow. Apply the function to an
-  argument with parentheses and print the result with the \codefont{print} function.
+  that functions act on.To define a function, introduce a variable and then
+do something with the variable after a fat arrow.Apply the function to an
+  argument with parentheses and print the result with the \codefont{ print } function.
 ";
 
 codeblock "let f = x => x + 1;
 
-print f(1);";
+print f(1); ";
 
 typeset tex"Functions can have any number of parameters. Wrapping $n$ parameters in
-parentheses and separating them with commas produces an $n$-ary function.";
+parentheses and separating them with commas produces an $n$ - ary function.";
 
 codeblock "let f = (x, y, z) => x + y - z;
 
-print f(1, 2, 3);";
+print f(1, 2, 3); ";
 
 typeset tex"Omitting the parentheses and commas produces a curried function.";
 
 codeblock "let f = x y z => x + y - z;
 
-print f(1)(2)(3);";
+print f(1)(2)(3); ";
 
 typeset tex"Affixing a parameter with a $*$ produces a variadic function.";
 
@@ -39,15 +43,15 @@ codeblock "let f = (*x) => x.reduce(+, 0);
 
 print f(1);
 print f(1, 2);
-print f(1, 2, 3);";
+print f(1, 2, 3); ";
 
 typeset tex"Functions can be partial. To define a partial function, use a value for a
-parameter. The function will be \textit{undefined} at any other value.";
+parameter.The function will be \textit{ undefined } at any other value.";
 
 codeblock "let f = 1 => 2;
 
 print f(1);
-print f(2);";
+print f(2); ";
 
 typeset tex"Match multiple values by separating parameter image pairs with a $|$.";
 
@@ -55,7 +59,7 @@ codeblock "let f = 1 => 2 | 2 => 3;
 
 print f(1);
 print f(2);
-print f(3);";
+print f(3); ";
 
 typeset tex"You can match specific values for total functions as well by supplying
 a catchall parameter, which is just a normal bound variable.";
@@ -64,7 +68,7 @@ codeblock "let f = 1 => 2 | x => 3;
 
 print f(1);
 print f(2);
-print f(3);";
+print f(3); ";
 
 typeset tex"Functions can be anonymous, and they can be the arguments of other functions.
 Here we pass two anonymous functions to the built in composition function.";
@@ -72,17 +76,17 @@ Here we pass two anonymous functions to the built in composition function.";
 codeblock "let f = (x => x + 1) . (x => x - 1);
 
 print f(1);
-print f(2);";
+print f(2); ";
 
 typeset tex"
-  \textbf{2. Values}
-  \hfill \\
-  \hfill \\
+\textbf{ 2. Values }
+\hfill \\
+\hfill \\
   Certain primitive objects are always available: numbers, truth values, strings, and symbols.
   Alongside these objects are basic functions for evaluating equality, and for doing math, boolean
   logic, and string manipulation.
-  \hfill \\
-  \hfill \\
+\hfill \\
+\hfill \\
   You can, for instance, do arithmetic.
 ";
 
@@ -95,31 +99,31 @@ codeblock "print true and false;";
 typeset tex"As well as string concatenation, indexing, and substitution.";
 
 codeblock "print #{quote("despair")} + #{quote(" ")} + #{quote("young")};
-print #{quote("aged")}[2];
-print #{quote("aged")}[2] = #{quote("i")};";
+print #{ quote("aged") } [2];
+print #{ quote("aged") } [2] = #{ quote("i") }; ";
 
 typeset tex"You can store values in variables.";
 
 codeblock "let x = 1;
 let y = 1;
 
-print x + y;";
+print x + y; ";
 
 typeset tex"In fact, both $+$ and $print$ are variables that point to functions
 defined by the compiler.";
 
 codeblock "print +;
-print print;";
+print print; ";
 
 typeset tex"To define your own function, introduce a bound variable, in this
 case $x$, and then do something with it after a fat arrow.";
 
 codeblock "let +1 = x => x + 1;
-print +1(1);";
+print + 1(1); ";
 
 typeset tex"Functions are just another kind of object -- they need not be attached
-to a variable, and they can be passed to other functions. They can also have
+to a variable, and they can be passed to other functions.They can also have
 multiple arguments.";
 
 codeblock "let compose = (f, g, x) => f(g(x));
-print compose(x => x + 1, x => x - 1, 0);";
+print compose(x => x + 1, x => x - 1, 0); ";
