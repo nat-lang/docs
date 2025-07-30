@@ -1,4 +1,4 @@
-use ../../core/online as online
+use ../../online as online
 
 let output = [];
 let doc = x => {
