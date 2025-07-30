@@ -2,7 +2,7 @@ use ../../core/online as online
 
 let output = [];
 let doc = x => {
-  print online.window.center;
+  print "-> #{online.window.center}";
   return GuideTexDoc(x, online.window.center);
 };
 let prefix typeset = output.push . doc;
