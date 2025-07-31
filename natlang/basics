@@ -1,12 +1,8 @@
 use ../../core/online as online
 
-print "-> #{online.window.center}";
-
 let output = [];
-let doc = x => {
-  
-  return GuideTexDoc(x, online.window.center);
-};
+let doc = x => GuideTexDoc(x, online.window.center);
+
 let prefix typeset = output.push . doc;
 let prefix codeblock = output.push . Codeblock;
 
