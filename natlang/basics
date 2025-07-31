@@ -1,8 +1,5 @@
 use ../../core/online as online
 
-use ../../core/ast as ast
-
-print ast.ASTNode;
 print "-> #{online.window.center}";
 
 let output = [];
