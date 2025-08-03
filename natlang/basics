@@ -1,4 +1,4 @@
-use .common
+use ../.common
 
 typeset tex"
 \textbf{ 1. Functions }
