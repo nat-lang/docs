@@ -1,12 +1,4 @@
-use ../../core/online as online
-
-let output = [];
-let doc = x => GuideTexDoc(x, online.window.center);
-
-let prefix typeset = output.push . doc;
-let prefix codeblock = output.push . Codeblock;
-
-let main = () => Generator(output, serialize);
+use .common
 
 typeset tex"
 \textbf{ 1. Functions }

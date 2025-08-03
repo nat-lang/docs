@@ -1,7 +1,4 @@
-let output = [];
-let prefix typeset = output.push . GuideTexDoc;
-let prefix codeblock = output.push . Codeblock;
-let main = () => Generator(output, serialize);
+use .common
 
 typeset tex"
 
