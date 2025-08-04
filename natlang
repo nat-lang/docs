@@ -6,13 +6,16 @@ typeset tex"
 \hfill \\
   Nat is a simple language, consisting of functions and the things
   that functions act on. To define a function, introduce a variable and then
-  do something with the variable after a fat arrow. Apply the function to an
+  do something with the variable after a fat arrow.
+";
+
+codeblock "let f = x => x + 1;";
+
+typeset tex"Apply the function to an
   argument with parentheses and print the result with the \codefont{print} function.
 ";
 
-codeblock "let f = x => x + 1;
-
-print f(1); ";
+codeblock "print f(1);";
 
 typeset tex"Functions can have any number of parameters. Wrapping $n$ parameters in
 parentheses and separating them with commas produces an $n$ - ary function.";
