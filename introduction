@@ -15,21 +15,3 @@ the paper closely enough to recognize.
 \hfill \break
 To learn more about \textbf{nat}, consult the \href{https://natlang.online/guide/natlang}{documentation}.
 
-continue reading.
-
-\begin{itemize}
-  \item[1.] Functions and values
-  \item[2.] Objects
-  \item[3.] Control
-  \item[4.] Types
-  \item[5.] LaTeX
-\end{itemize}
-Tutorials:
-
-\begin{itemize}
-  \item[1.] Model theory
-  \item[2.] Composition
-  \item[3.] Modality
-  \item[4.] Dynamics
-\end{itemize}
-";
