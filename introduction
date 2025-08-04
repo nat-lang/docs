@@ -13,7 +13,9 @@ in the library that you're familiar with and experiment with it. The formalism s
 the paper closely enough to recognize.
 
 \hfill \break
-To learn more about \textbf{nat}, continue reading.
+To learn more about \textbf{nat}, consult the \href{https://natlang.online/guide/natlang}{documentation}.
+
+continue reading.
 
 \begin{itemize}
   \item[1.] Functions and values
