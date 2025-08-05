@@ -2,7 +2,7 @@ use .common
 
 anchor(
   "functions",
-  "#{online.host}/guide/natlang#functions",
+  "guide/natlang#functions",
   tex"\color{black}\textbf{1. Functions}"
 );
 
@@ -76,7 +76,7 @@ print f(2); ";
 
 anchor(
   "values",
-  "#{online.host}/guide/natlang#values",
+  "guide/natlang#values",
   tex"\color{black}\textbf{2. Values}"
 );
 
@@ -129,7 +129,7 @@ print compose(x => x + 1, x => x - 1, 0); ";
 
 anchor(
   "objects",
-  "#{online.host}/guide/natlang#objects",
+  "guide/natlang#objects",
   tex"\color{black}\textbf{3. Objects}"
 );
 
