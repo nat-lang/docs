@@ -1,7 +1,8 @@
 use .common
 
+anchor("functions", tex"\textbf{ 1. Functions }");
+
 typeset tex"
-\textbf{ 1. Functions }
 \hfill \\
 \hfill \\
   Nat is a simple language, consisting of functions and the things
