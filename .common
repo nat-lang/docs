@@ -9,7 +9,7 @@ let anchor = (title, path, tex) => output.push(
   Anchor(
     title,
     path,
-    doc("\href{#{path}}{#{tex}}")
+    doc("\href{#{online.host}/#{path}}{#{tex}}")
   )
 );
 
