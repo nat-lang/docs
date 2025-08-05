@@ -8,6 +8,7 @@ let prefix codeblock = output.push . Codeblock;
 let anchor = (title, path, tex) => output.push(
   Anchor(
     title,
+    online.path,
     doc("\href{#{online.host}/#{online.path}##{title}}{#{tex}}")
   )
 );
