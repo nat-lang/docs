@@ -1,6 +1,6 @@
 use .common
 
-anchor("functions", tex"\textbf{ 1. Functions }");
+anchor("functions", tex"\textbf{1. Functions}");
 
 typeset tex"
   Nat is a simple language, consisting of functions and the things
