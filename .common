@@ -5,6 +5,6 @@ let doc = x => GuideTexDoc(x, online.window.center);
 
 let prefix typeset = output.push . doc;
 let prefix codeblock = output.push . Codeblock;
-let anchor = (title, tex) => output.push(Anchor(title,tex));
+let anchor = (title, tex) => output.push(Anchor(title,doc(tex)));
 
 let main = () => Generator(output, serialize);
