@@ -5,7 +5,7 @@ anchor("functions", tex"\textbf{1. Functions}");
 typeset tex"
   Nat is a simple language, consisting of functions and the things
   that functions act on. To define a function, introduce a variable and then
-  do something with the variable after a fat arrow.
+  do something with it after a fat arrow.
 ";
 
 codeblock "let f = x => x + 1;";
