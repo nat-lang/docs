@@ -2,7 +2,7 @@ use .common
 
 anchor(
   "functions",
-  tex"\href{#{online.host}/guide/natlang#functions}{\textbf{1. Functions}}"
+  tex"\href{#{online.host}/guide/natlang#functions}{\color{black}\textbf{1. Functions}}"
 );
 
 typeset tex"
