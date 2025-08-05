@@ -74,7 +74,11 @@ codeblock "let f = (x => x + 1) . (x => x - 1);
 print f(1);
 print f(2); ";
 
-anchor("values", tex"\textbf{2. Values}");
+anchor(
+  "values",
+  "#{online.host}/guide/natlang#values",
+  tex"\color{black}\textbf{2. Values}"
+);
 
 typeset tex"
   Certain primitive objects are always available: numbers, truth values, strings, and symbols.
