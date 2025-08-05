@@ -127,10 +127,13 @@ multiple arguments.";
 codeblock "let compose = (f, g, x) => f(g(x));
 print compose(x => x + 1, x => x - 1, 0); ";
 
+anchor(
+  "objects",
+  "#{online.host}/guide/natlang#objects",
+  tex"\color{black}\textbf{3. Objects}"
+);
+
 typeset tex"
-\textbf{Objects}
-\hfill \\
-\hfill \\
 \textbf{nat} defines a number of objects for structuring
 other objects: sets, sequences, maps, and trees.
 \hfill \\
