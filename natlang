@@ -99,32 +99,6 @@ codeblock "let advice = #{quote("despair")} + #{quote(" ")} + #{quote("young")};
 print advice;
 print advice[0];";
 
-typeset tex"You can store values in variables.";
-
-codeblock "let x = 1;
-let y = 1;
-
-print x + y; ";
-
-typeset tex"In fact, both $+$ and $print$ are variables that point to functions
-defined by the compiler.";
-
-codeblock "print +;
-print print; ";
-
-typeset tex"To define your own function, introduce a bound variable, in this
-case $x$, and then do something with it after a fat arrow.";
-
-codeblock "let +1 = x => x + 1;
-print + 1(1); ";
-
-typeset tex"Functions are just another kind of object -- they need not be attached
-to a variable, and they can be passed to other functions.They can also have
-multiple arguments.";
-
-codeblock "let compose = (f, g, x) => f(g(x));
-print compose(x => x + 1, x => x - 1, 0); ";
-
 anchor(
   "objects",
   tex"\color{black}\textbf{3. Objects}"
