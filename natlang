@@ -95,9 +95,9 @@ codeblock "print true and false;";
 
 typeset tex"As well as string concatenation, indexing, and substitution.";
 
-codeblock "print #{quote("despair")} + #{quote(" ")} + #{quote("young")};
-print #{ quote("aged") } [2];
-print #{ quote("aged") } [2] = #{ quote("i") }; ";
+codeblock "let advice = #{quote("despair")} + #{quote(" ")} + #{quote("young")};
+print advice;
+print advice[0];";
 
 typeset tex"You can store values in variables.";
 
