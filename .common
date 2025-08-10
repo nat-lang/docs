@@ -6,7 +6,7 @@ let doc = x => GuideTexDoc(x, online.window.center);
 let prefix typeset = output.push . doc;
 let prefix codeblock = output.push . Codeblock;
 let anchor = (title, tex) => {
-  print "-->#{online.host}";
+  print "-->#{online.path}";
   output.push(
     Anchor(
       title,
