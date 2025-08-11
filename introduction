@@ -1,5 +1,4 @@
 use .common
-use .foo
 
 typeset tex"
 \section{Introduction}
