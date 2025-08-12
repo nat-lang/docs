@@ -1,5 +1,10 @@
 use .common
 
+anchor(
+  "functions",
+  tex"\color{black}\textbf{1. Functions}"
+);
+
 typeset tex"
   Nat is a simple language, consisting of functions and the things
   that functions act on. To define a function, introduce a variable and then
