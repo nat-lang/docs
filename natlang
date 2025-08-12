@@ -1,6 +1,6 @@
 use .common
 
-typeset tex"\color{black}\textbf{0. Foo}"
+typeset tex"\color{black}\textbf{0. Foo}";
 
 anchor(
   "functions",
