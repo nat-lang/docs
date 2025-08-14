@@ -1,7 +1,5 @@
 use .common
 
-typeset tex"\color{black}\textbf{0. Foo}";
-
 anchor(
   "functions",
   tex"\color{black}\textbf{1. Functions}"
