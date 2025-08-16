@@ -76,6 +76,9 @@ typeset tex"While the default syntax for applying a function is with parentheses
 also possible to create infix and prefix functions. Infix functions must be binary, and
 prefix functions must be unary.";
 
+codeblock "let infix f = x => x + 1;
+print f 1;";
+
 
 anchor(
   "values",
