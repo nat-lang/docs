@@ -76,7 +76,7 @@ typeset tex"While the default syntax for applying a function is with parentheses
 to define prefix functions, which are applied by placing them before an argument, with a space
 between.";
 
-codeblock "let infix f = x => x + 1;
+codeblock "let prefix f = x => x + 1;
 print f 1;";
 
 typeset tex"\codefont{print} is just a prefix function that \textbf{nat} defines for you.";
