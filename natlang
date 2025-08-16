@@ -72,16 +72,24 @@ codeblock "let f = (x => x + 1) . (x => x - 1);
 print f(1);
 print f(2); ";
 
-typeset tex"While the default syntax for applying a function is with parentheses, it's possible
-to define prefix functions, which are applied by placing them before an argument, with a space
-between.";
+typeset tex"While the default syntax for applying a function is with parentheses, it's also
+possible to define prefix functions, which you can then apply by placing immediately before
+arguments, with a space. Prefix functions must be unary.";
 
 codeblock "let prefix f = x => x + 1;
+
 print f 1;";
 
 typeset tex"\codefont{print} is just a prefix function that \textbf{nat} defines for you.";
 
 codeblock tex"print print;";
+
+typeset tex"You can define infix functions in a similar fashion. Infix functions must
+be binary.";
+
+codeblock "let infix and = (x, y) => x + y;
+
+print 2 and 2;";
 
 anchor(
   "values",
