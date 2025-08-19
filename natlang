@@ -88,9 +88,9 @@ codeblock tex"print print;";
 typeset tex"You can define infix functions in a similar fashion. Infix functions must
 be binary.";
 
-codeblock "let infix and = (x, y) => x + y;
+codeblock "let infix plus = (x, y) => x + y;
 
-print 2 and 2;";
+print 2 plus 2;";
 
 typeset tex"Two paradigms are available ";
 
