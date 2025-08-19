@@ -20,7 +20,7 @@ typeset tex"Apply the function to an
 codeblock "print f(1);";
 
 typeset tex"Functions can have any number of parameters. Wrapping $n$ parameters in
-parentheses and separating them with commas produces an $n$ - ary function.";
+parentheses and separating them with commas produces an $n$-ary function.";
 
 codeblock "let f = (x, y, z) => x + y - z;
 
@@ -41,14 +41,14 @@ print f(1, 2);
 print f(1, 2, 3); ";
 
 typeset tex"Functions can be partial. To define a partial function, use a value for a
-parameter.The function will be \textit{ undefined } at any other value.";
+parameter. The function will be undefined at any other value.";
 
 codeblock "let f = 1 => 2;
 
 print f(1);
 print f(2); ";
 
-typeset tex"Match multiple values by separating parameter image pairs with a $|$.";
+typeset tex"You can match multiple values by separating parameter image pairs with a $|$.";
 
 codeblock "let f = 1 => 2 | 2 => 3;
 
@@ -90,6 +90,8 @@ be binary.";
 codeblock "let infix and = (x, y) => x + y;
 
 print 2 and 2;";
+
+typeset tex"Two paradigms are available ";
 
 anchor(
   "values",
