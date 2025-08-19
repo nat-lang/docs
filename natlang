@@ -73,8 +73,8 @@ print f(1);
 print f(2); ";
 
 typeset tex"While the default syntax for applying a function is with parentheses, it's also
-possible to define prefix functions, which you can then apply by placing immediately before
-arguments, with a space. Prefix functions must be unary.";
+possible to define prefix functions, which apply to arguments that they immediately precede.
+Prefix functions must be unary.";
 
 codeblock "let prefix f = x => x + 1;
 
