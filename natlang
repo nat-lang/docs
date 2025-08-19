@@ -80,7 +80,8 @@ codeblock "let prefix f = x => x + 1;
 
 print f 1;";
 
-typeset tex"\codefont{print} is just a prefix function that \textbf{nat} defines for you.";
+typeset tex"The \codefont{print} function, which we have been using, is a prefix function that
+\textbf{nat} defines for you.";
 
 codeblock tex"print print;";
 
