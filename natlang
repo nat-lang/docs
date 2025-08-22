@@ -93,8 +93,13 @@ codeblock "let infix plus = (x, y) => x + y;
 
 print 2 plus 2;";
 
+typeset tex"The arithmetic operators that we have been using so far are infix functions
+defined by the interpreter.";
+
+codeblock "[+,-,*].map(print);";
+
 typeset tex"Two paradigms are available when defining the body of a function: the functional
-and the imperative. So far we have used only the functional paradigm, in which the entire body
+and the imperative. So far we have used the functional paradigm, in which the entire body
 is an expression, and the function implicitly returns that expression when evaluated.\\
 \\
 The imperative paradigm allows a sequence of statements to be evaluated and makes a return value
@@ -107,6 +112,9 @@ codeblock "let f = x => {
 
 f(1);";
 
+typeset text"In the body of a function, you can define variables with the \codefont{let} keyword.
+In fact, each block of code we've evaluated, and any file written in \textbf{nat}, is just an
+imperative function.";
 
 anchor(
   "values",
