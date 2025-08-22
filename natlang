@@ -217,6 +217,7 @@ typeset tex"
 \hfill \\
 \hfill \\
 To define a map, enclose a sequence of key value pairs, separated by colons, within curly braces.
+Access the value at some key with square brackets.
 ";
 
 codeblock "let x = {true: false, false: true};
@@ -229,7 +230,12 @@ typeset tex"
 4. Trees
 \hfill \\
 \hfill \\
+To define the node of a tree, use square brackets.
 ";
+
+codeblock "let x = [1 2 3];
+
+print x;";
 
 anchor(
   "control",
