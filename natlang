@@ -216,19 +216,19 @@ typeset tex"
 3. Maps
 \hfill \\
 \hfill \\
+To define a map, enclose a sequence of key value pairs, separated by colons, within curly braces.
+";
+
+codeblock "let x = {true: false, false: true};
+
+print x[true];
+print x[false];
 ";
 
 typeset tex"
 4. Trees
 \hfill \\
 \hfill \\
-";
-
-typeset tex"
-\textbf{Classes}
-\hfill \\
-\hfill \\
-It's possible to define your own classes of object.
 ";
 
 anchor(
