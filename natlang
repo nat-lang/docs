@@ -223,8 +223,7 @@ Access the value at some key with square brackets.
 codeblock "let x = {true: false, false: true};
 
 print x[true];
-print x[false];
-";
+print x[false];";
 
 typeset tex"
 4. Trees
