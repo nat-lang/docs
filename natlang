@@ -33,13 +33,19 @@ codeblock "let f = x y z => x + y - z;
 print f(1)(2)(3); ";
 
 typeset tex"Affixing a parameter with a $*$ produces a variadic function. Within the scope
-of the function, the parameter will be sequence. We'll see sequences in more detail later.";
+of the function, the parameter will be a sequence. We'll see sequences in more detail later.";
 
 codeblock "let f = (*x) => x.reduce(+, 0);
 
 print f(1);
 print f(1, 2);
 print f(1, 2, 3); ";
+
+typeset tex"Functions can have zero parameters.";
+
+codeblock "let f = () => 1;
+
+print f();";
 
 typeset tex"Functions can be partial. To define a partial function, use a value for a
 parameter. The function will be undefined at any other value.";
@@ -112,7 +118,13 @@ codeblock "let f = x => {
 
 f(1);";
 
-typeset text"In the body of a function, you can define variables with the \codefont{let} keyword.
+typeset tex"To return a value from a function, use the \codefont{return} keyword.";
+
+codeblock "let f = x => {
+  return f;
+};";
+
+typeset tex"In the body of a function, you can define variables with the \codefont{let} keyword.
 In fact, each block of code we've evaluated, and any file written in \textbf{nat}, is just an
 imperative function.";
 
@@ -125,22 +137,7 @@ typeset tex"
   Certain primitive objects are always available: numbers, truth values, strings, and symbols.
   Alongside these objects are basic functions for evaluating equality, and for doing math, boolean
   logic, and string manipulation.
-\hfill \\
-\hfill \\
-  You can, for instance, do arithmetic.
 ";
-
-codeblock "print 1 + 1;";
-
-typeset tex"You can also do boolean logic.";
-
-codeblock "print true and false;";
-
-typeset tex"As well as string concatenation, indexing, and substitution.";
-
-codeblock "let advice = #{quote("despair")} + #{quote(" ")} + #{quote("young")};
-print advice;
-print advice[0];";
 
 anchor(
   "objects",
@@ -233,3 +230,8 @@ typeset tex"
 \hfill \\
 It's possible to define your own classes of object.
 ";
+
+anchor(
+  "control",
+  tex"\color{black}\textbf{3. Control}"
+);
