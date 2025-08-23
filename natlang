@@ -232,10 +232,6 @@ typeset tex"
 To define the node of a tree, use square brackets.
 ";
 
-codeblock "let x = [1 2 3];
-
-print x;";
-
 anchor(
   "control",
   tex"\color{black}\textbf{3. Control}"
