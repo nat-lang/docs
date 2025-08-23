@@ -32,7 +32,7 @@ codeblock "let f = x y z => x + y - z;
 
 print f(1)(2)(3); ";
 
-typeset tex"Affixing a parameter with a $*$ produces a variadic function. Within the scope
+typeset tex"Affixing a parameter with a `$*$' produces a variadic function. Within the scope
 of the function, the parameter will be a sequence. We'll see sequences in more detail later.";
 
 codeblock "let f = (*x) => x.reduce(+, 0);
