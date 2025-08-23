@@ -20,7 +20,7 @@ typeset tex"Apply the function to an
 codeblock "print f(1);";
 
 typeset tex"Functions can have any number of parameters. Wrapping $n$ parameters in
-parentheses and separating them with commas produces an $n$ - ary function.";
+parentheses and separating them with commas produces an $n$-ary function.";
 
 codeblock "let f = (x, y, z) => x + y - z;
 
@@ -32,7 +32,8 @@ codeblock "let f = x y z => x + y - z;
 
 print f(1)(2)(3); ";
 
-typeset tex"Affixing a parameter with a $*$ produces a variadic function.";
+typeset tex"Affixing a parameter with a `$*$' produces a variadic function. Within the scope
+of the function, the parameter will be a sequence. We'll see sequences in more detail later.";
 
 codeblock "let f = (*x) => x.reduce(+, 0);
 
@@ -40,8 +41,14 @@ print f(1);
 print f(1, 2);
 print f(1, 2, 3); ";
 
+typeset tex"Functions can have zero parameters.";
+
+codeblock "let f = () => 1;
+
+print f();";
+
 typeset tex"Functions can be partial. To define a partial function, use a value for a
-parameter.The function will be \textit{ undefined } at any other value.";
+parameter. The function will be undefined at any other value.";
 
 codeblock "let f = 1 => 2;
 
@@ -56,8 +63,8 @@ print f(1);
 print f(2);
 print f(3); ";
 
-typeset tex"You can match specific values for total functions as well by supplying
-a catchall parameter, which is just a normal bound variable.";
+typeset tex"You can match specific values when defining total functions as well, by
+supplying a final catchall parameter, which is just a normal bound variable.";
 
 codeblock "let f = 1 => 2 | x => x * 2;
 
@@ -73,23 +80,53 @@ print f(1);
 print f(2); ";
 
 typeset tex"While the default syntax for applying a function is with parentheses, it's also
-possible to define prefix functions, which you can then apply by placing immediately before
-arguments, with a space. Prefix functions must be unary.";
+possible to define prefix functions, which apply to arguments that they immediately precede.
+Prefix functions must be unary.";
 
 codeblock "let prefix f = x => x + 1;
 
 print f 1;";
 
-typeset tex"\codefont{print} is just a prefix function that \textbf{nat} defines for you.";
+typeset tex"The \codefont{print} function, which we have been using, is a prefix function that
+\textbf{nat} defines for you.";
 
 codeblock tex"print print;";
 
 typeset tex"You can define infix functions in a similar fashion. Infix functions must
 be binary.";
 
-codeblock "let infix and = (x, y) => x + y;
+codeblock "let infix plus = (x, y) => x + y;
 
-print 2 and 2;";
+print 2 plus 2;";
+
+typeset tex"The arithmetic operators that we have been using so far are infix functions
+defined by the interpreter.";
+
+codeblock "[+,-,*].map(print);";
+
+typeset tex"Two paradigms are available when defining the body of a function: the functional
+and the imperative. So far we have used the functional paradigm, in which the entire body
+is an expression, and the function implicitly returns that expression when evaluated.\\
+\\
+The imperative paradigm allows a sequence of statements to be evaluated and makes a return value
+optional.";
+
+codeblock "let f = x => {
+  x = x + 1;
+  print x;
+};
+
+f(1);";
+
+typeset tex"To return a value from a function, use the \codefont{return} keyword.";
+
+codeblock "let f = x => {
+  return f;
+};";
+
+typeset tex"In the body of a function, you can define variables with the \codefont{let} keyword.
+In fact, each block of code we've evaluated, and any file written in \textbf{nat}, is just an
+imperative function.";
 
 anchor(
   "values",
@@ -100,22 +137,7 @@ typeset tex"
   Certain primitive objects are always available: numbers, truth values, strings, and symbols.
   Alongside these objects are basic functions for evaluating equality, and for doing math, boolean
   logic, and string manipulation.
-\hfill \\
-\hfill \\
-  You can, for instance, do arithmetic.
 ";
-
-codeblock "print 1 + 1;";
-
-typeset tex"You can also do boolean logic.";
-
-codeblock "print true and false;";
-
-typeset tex"As well as string concatenation, indexing, and substitution.";
-
-codeblock "let advice = #{quote("despair")} + #{quote(" ")} + #{quote("young")};
-print advice;
-print advice[0];";
 
 anchor(
   "objects",
@@ -194,17 +216,27 @@ typeset tex"
 3. Maps
 \hfill \\
 \hfill \\
+To define a map, enclose a sequence of key value pairs, separated by colons, within curly braces.
+Access the value at some key with square brackets.
 ";
+
+codeblock "let x = {true: false, false: true};
+
+print x[true];
+print x[false];";
 
 typeset tex"
 4. Trees
 \hfill \\
 \hfill \\
+To define the node of a tree, use square brackets.
 ";
 
-typeset tex"
-\textbf{Classes}
-\hfill \\
-\hfill \\
-It's possible to define your own classes of object.
-";
+codeblock "let x = [1 2 3];
+
+print x;";
+
+anchor(
+  "control",
+  tex"\color{black}\textbf{3. Control}"
+);
