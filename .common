@@ -8,7 +8,7 @@ let prefix codeblock = output.push . Codeblock;
 
 let prefix print = x => {
   if (vmType(x) == OInstance) {
-    if (callable(x.tex)))
+    if (callable(x.tex))
       output.push(x.tex());
     else if (callable(x.print)
       x.print();
