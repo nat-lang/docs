@@ -234,7 +234,7 @@ To define the node of a tree, use square brackets.
 
 codeblock "let x = [1 2 3];
 
-let main = () => serialize(StandaloneTexDoc(x.tex()));";
+print x;";
 
 anchor(
   "control",
