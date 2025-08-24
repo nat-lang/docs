@@ -8,8 +8,8 @@ let prefix codeblock = output.push . Codeblock;
 
 let defaultPrint = print;
 let prefix print = x => {
-  if (vmType(x) == OInstance && callable(x.viz))
-    output.push(x.viz());
+  if (vmType(x) == OInstance && callable(x.tex))
+    output.push(x.tex());
   defaultPrint(x);
 };
 
