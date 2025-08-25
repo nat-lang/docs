@@ -5,6 +5,13 @@ let doc = x => GuideTexDoc(x, online.window.center);
 
 let prefix typeset = output.push . doc;
 let prefix codeblock = output.push . Codeblock;
+
+let prefix print = output.push . x => {
+  if (vmType(x) == OInstance && callable(x.viz))
+    return x.viz();
+  return str(x);
+};
+
 let anchor = (title, tex) => {
   output.push(
     Anchor(
